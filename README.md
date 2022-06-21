@@ -53,59 +53,59 @@ Descripción de los archivos:
 
 Ejemplo de input:
 
-{
-  "header":{
-    "empresa":"empresa",
-    "id": "id_empresa",
-    "planta":"1234"
-    },
-  "update_time": "2022-04-04 12:38:53.881619",
-  "data":{
-    "datetime": "['2021-06-06 00:00:00+00:00', '2021-06-06 00:00:13+00:00', '2021-06-06 00:00:28+00:00',...
-    "values": "[0.74, 0.74, 0.71, 0.76, 0.82, 0.79,...
-  }
-}
+    {
+      "header":{
+        "empresa":"empresa",
+        "id": "id_empresa",
+        "planta":"1234"
+        },
+      "update_time": "2022-04-04 12:38:53.881619",
+      "data":{
+        "datetime": "['2021-06-06 00:00:00+00:00', '2021-06-06 00:00:13+00:00', '2021-06-06 00:00:28+00:00',...
+        "values": "[0.74, 0.74, 0.71, 0.76, 0.82, 0.79,...
+      }
+    }
 
 
 Ejemplo de output:
 
-{
-  "header": {
-    "empresa":"empresa",
-    "id": "id_empresa",
-    "planta":"1234"
-    },
-  "update_time": "2022-04-04 12:38:53.881619",
-  "inputs":{
-      "prepro":"[0.74, 0.74, 0.71, 0.76, 0.82, 0.79,...
-      "date_input":"['2021-06-06 00:00:00+00:00', '2021-06-06 00:00:13+00:00',...
-  },
+    {
+      "header": {
+        "empresa":"empresa",
+        "id": "id_empresa",
+        "planta":"1234"
+        },
+      "update_time": "2022-04-04 12:38:53.881619",
+      "inputs":{
+          "prepro":"[0.74, 0.74, 0.71, 0.76, 0.82, 0.79,...
+          "date_input":"['2021-06-06 00:00:00+00:00', '2021-06-06 00:00:13+00:00',...
+      },
 
-  "params":{
-      "smooth":31,
-      "conv":3.6,
-      "samp":15,
-      "alarm":56,
-  },
+      "params":{
+          "smooth":31,
+          "conv":3.6,
+          "samp":15,
+          "alarm":56,
+      },
 
-  "QoI":{"Completeness":1,
-            "Outliers":0,
-  "output":{
-      "ConfInt": "[10,1]",
-      "Max": "30",
-      "Regression":"[0.74, 0.74, 0.71, 0.76, 0.82, 0.79,...
-      "time_reg":"['2021-06-06 00:00:00+00:00', '2021-06-06 00:00:13+00:00',...
-      "alarm_value": 1,
-      "validation":{
-          "check":"yes",
-          "MAPEreg":0.1,
-          "MAPEmax":0.1,
-          "MAPEmean":0.1
+      "QoI":{"Completeness":1,
+                "Outliers":0,
+      "output":{
+          "ConfInt": "[10,1]",
+          "Max": "30",
+          "Regression":"[0.74, 0.74, 0.71, 0.76, 0.82, 0.79,...
+          "time_reg":"['2021-06-06 00:00:00+00:00', '2021-06-06 00:00:13+00:00',...
+          "alarm_value": 1,
+          "validation":{
+              "check":"yes",
+              "MAPEreg":0.1,
+              "MAPEmax":0.1,
+              "MAPEmean":0.1
+          }
+
       }
 
-  }
-
-}
+    } 
 
 
 
